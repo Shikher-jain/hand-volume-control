@@ -20,9 +20,8 @@ def start_gesture_control():
         subprocess.Popen([sys.executable, "Advance-Python-SJ/Open CV/Advance/Projects/Gesture/HandVolumeGesture.py", video_file])
     else:
         subprocess.Popen([sys.executable, "Advance-Python-SJ/Open CV/Advance/Projects/Gesture/HandVolumeGesture.py", source_type])
+    
     return redirect(url_for('home'))
 
 if __name__ == "__main__":
     app.run(debug=True)
-
-
